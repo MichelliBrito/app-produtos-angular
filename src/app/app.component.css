@@ -1,0 +1,43 @@
+
+.sts-main-content {}
+
+.sts-aside {
+  border-right: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.sts-content {}
+
+.sts-content-container {
+  background-color: #eeeeee;
+}
+
+.sts-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.mat-toolbar.mat-primary {
+    /* background: #007bff;
+    color: #fff; */
+    background: white;
+    color: #37474F;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  }
+
+.sts-content-wrap {
+  margin: 2%;
+  height: 100%;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-list-item {
+  color: black;
+}
+
+

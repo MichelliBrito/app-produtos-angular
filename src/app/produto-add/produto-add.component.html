@@ -1,0 +1,32 @@
+
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Adicionar Produtos</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form">
+        <table class="example-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width"> <input matInput placeholder="Nome Produto" matInput [(ngModel)]="productData.nome"
+                  name="nome" required> </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+              <td>
+                <mat-form-field class="example-full-width"> <input matInput placeholder="Quantidade" matInput [(ngModel)]="productData.quantidade"
+                    name="quantidade" required> </mat-form-field>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                <mat-form-field class="example-full-width"> <input matInput placeholder="Valor" matInput [(ngModel)]="productData.valor"
+                    name="valor" required> </mat-form-field>
+              </td>
+          </tr>
+        </table>
+      </form>
+      <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    </mat-card-content>
+    <mat-card-actions> <button mat-raised-button (click)="addProduct()" color="primary">Save</button> </mat-card-actions>
+  </mat-card>

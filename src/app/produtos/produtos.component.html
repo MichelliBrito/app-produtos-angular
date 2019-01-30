@@ -1,0 +1,35 @@
+<div style="text-align:center">
+
+  <div>
+    <button (click)="add()">
+      Add
+    </button>
+  </div>  
+  <p>
+    Lista de Produtos
+  </p>
+  
+  <!-- <ul class="products">
+    <li *ngFor="let p of produtos; let i=index;">
+        <a routerLink="/#">
+          <span class="">{{i+1}}</span> {{p.nome}}
+        </a>
+    </li>
+  </ul> -->
+  
+  <table style="width:20%"  class="products">
+    <tr>
+      <th>Id</th>
+      <th>Produto</th>
+      <th>Quantidade</th> 
+      <th>Valor</th>
+    </tr>
+    <tr *ngFor="let p of produtos; let i=index;">
+      <td>{{p.id}}</td>
+      <td>{{p.nome}}</td>
+      <td>{{p.quantidade}}</td> 
+      <td>{{p.valor}}</td>
+    </tr>
+  </table>
+  </div>
+  
