@@ -12,6 +12,8 @@ export class ProdutosComponent implements OnInit {
 
   produtos: Produto[] = [];
 
+  columnsToDisplay = ['id', 'nome', 'quantidade', 'valor'];
+
   constructor(public rest:RestService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {

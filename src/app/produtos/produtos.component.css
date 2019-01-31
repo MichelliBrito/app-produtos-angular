@@ -1,0 +1,9 @@
+table {
+    /* border: 1px solid rgb(48, 47, 47); */
+    width: 50% !important; /*Importante manter o !important rs */
+    margin: auto;   
+  }
+
+.sts-text-center{
+    text-align: center;
+  }
